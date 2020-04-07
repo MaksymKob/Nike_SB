@@ -1,0 +1,143 @@
+.nikeSB {
+  background: url(../images/background-2.png) no-repeat 100%, url(../images/background-1.png) no-repeat;
+  background-color: #c5c5c8;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+.nikeSB__block {
+  width: 100%;
+  width: 690px;
+  height: 400px;
+  background: #111a28;
+  box-shadow: 0 0 65px 0 rgba(0, 0, 0, 0.82);
+  border-radius: 10px;
+  padding: 20px;
+}
+.nikeSB__block__info {
+  display: flex;
+}
+
+.info__picture {
+  margin: 80px 80px 35px 15px;
+}
+
+.direction__title {
+  font-size: 24px;
+  line-height: 1.2;
+  color: #e1e1e1;
+  margin-bottom: 16px;
+}
+
+.direction__coment {
+  font-size: 14px;
+  color: rgba(225, 225, 225, 0.54);
+}
+
+.direction__form {
+  position: relative;
+}
+.direction__form .rating__block {
+  margin: 25px 0;
+  width: 60px;
+  height: 12px;
+}
+.direction__form .rating__block input[type=radio] {
+  display: none;
+}
+.direction__form .rating__block .label__rating {
+  float: right;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url(../images/star.png) no-repeat 50% 0;
+  cursor: pointer;
+}
+.direction__form .rating__block .label__rating:hover,
+.direction__form .rating__block .label__rating:hover ~ .label__rating,
+.direction__form .rating__block input[type=radio]:checked ~ .label__rating {
+  background: url(../images/star-active.png) no-repeat 50% 0;
+}
+.direction__form .select__block .size__select {
+  display: inline-block;
+}
+.direction__form .select__block .size__select select {
+  display: block;
+  background: none;
+  border: 0;
+  margin-right: 5px;
+  border: 1px solid #ffffff;
+  width: 75px;
+  color: #ffffff;
+  font-size: 15px;
+  opacity: 0.26;
+  padding: 10px 10px;
+}
+.direction__form .select__block .size__select select option {
+  color: #ffffff;
+  background: #111a28;
+}
+.direction__form .select__block .submit {
+  width: 190px;
+  padding: 15px 0;
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: 15px;
+  opacity: 0.26;
+  border: solid 1px #ffffff;
+  background: #4c525a;
+  cursor: pointer;
+}
+.direction__form .select__block select:hover,
+.direction__form .select__block .submit:hover {
+  opacity: 1;
+}
+.direction__form .color__block {
+  position: absolute;
+  top: 220px;
+  left: -290px;
+  width: 125px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.direction__form .color__block input[type=radio] {
+  display: none;
+}
+.direction__form .color__block .label__color-1,
+.direction__form .color__block .label__color-2,
+.direction__form .color__block .label__color-3,
+.direction__form .color__block .label__color-4 {
+  display: inline-block;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.direction__form .color__block .label__color-1 {
+  background: #1f273f;
+}
+.direction__form .color__block .label__color-2 {
+  background: #ffffff;
+}
+.direction__form .color__block .label__color-3 {
+  background: #ed3333;
+}
+.direction__form .color__block .label__color-4 {
+  background: #29e3ea;
+}
+.direction__form .color__block .label__color-1:hover,
+.direction__form .color__block .label__color-2:hover,
+.direction__form .color__block .label__color-3:hover,
+.direction__form .color__block .label__color-4:hover {
+  transform: scale(1.4);
+  border: 2px solid #6e737c;
+}
+
+/*# sourceMappingURL=style.css.map */

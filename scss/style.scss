@@ -1,0 +1,139 @@
+.nikeSB {
+    background: url(../images/background-2.png) no-repeat 100%, url(../images/background-1.png) no-repeat;
+    background-color: #c5c5c8;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    &__block {
+        width: 100%;
+        width: 690px;
+        height: 400px;
+        background: #111a28;
+        box-shadow: 0 0 65px 0 rgba(0, 0, 0, 0.82);
+        border-radius: 10px;
+        padding: 20px;
+        &__info {
+            display: flex;
+        }
+    }
+}
+.info__picture {
+    margin: 80px 80px 35px 15px;
+}
+.direction__title {
+    font-size: 24px;
+    line-height: 1.2;
+    color: #e1e1e1;
+    margin-bottom: 16px;
+}
+.direction__coment {
+    font-size: 14px;
+    color: rgba(225, 225, 225, 0.54);
+}
+.direction__form {
+    position: relative;
+    .rating__block {
+        margin: 25px 0;
+        width: 60px;
+        height: 12px;
+            input[type="radio"] {
+            display: none;
+            }
+        .label__rating {
+            float: right;
+            display: block;
+            width: 12px;
+            height: 12px;
+            background: url(../images/star.png) no-repeat 50% 0;
+            cursor: pointer;
+            }
+        .label__rating:hover, 
+        .label__rating:hover ~ .label__rating, 
+        input[type="radio"]:checked ~ .label__rating {
+            background: url(../images/star-active.png) no-repeat 50% 0;
+        }
+    }
+    .select__block {
+        .size__select {
+            display: inline-block;
+            select {
+                display: block;
+                background: none;
+                border: 0;
+                margin-right: 5px;
+                border: 1px solid #ffffff;
+                width: 75px;
+                color: #ffffff;
+                font-size: 15px;
+                opacity: 0.26;
+                padding: 10px 10px;
+                option {
+                    color: #ffffff;
+                    background: #111a28;
+                }
+            }
+        }  
+        .submit {
+            width: 190px;
+            padding: 15px 0;
+            margin-top: 30px;
+            color: #ffffff;
+            font-size: 15px;
+            opacity: 0.26;
+            border: solid 1px #ffffff;
+            background: #4c525a;
+            cursor: pointer;
+        } 
+        select:hover,
+        .submit:hover {
+            opacity: 1;
+        }
+    }
+    .color__block {
+        position: absolute;
+        top: 220px;
+        left: -290px;
+        width: 125px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            input[type="radio"] {
+                display: none;
+            }
+        .label__color-1,
+        .label__color-2,
+        .label__color-3,
+        .label__color-4 {
+            display: inline-block;
+            justify-content: center;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .label__color-1 {
+            background: #1f273f;
+        }
+        .label__color-2 {
+            background: #ffffff;
+        }
+        .label__color-3 {
+            background: #ed3333;
+        }
+        .label__color-4 {
+            background: #29e3ea;
+        }
+        .label__color-1:hover,
+        .label__color-2:hover,
+        .label__color-3:hover,
+        .label__color-4:hover {
+            transform: scale(1.4);
+            border: 2px solid #6e737c;
+        }
+    }
+}
